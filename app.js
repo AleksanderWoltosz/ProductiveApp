@@ -6,7 +6,12 @@ const formEpph3 = document.querySelector('.formEpph3');
 const formQc1 = document.querySelector('.formQc1');
 const formQc2 = document.querySelector('.formQc2');
 const formQc3 = document.querySelector('.formQc3');
-const formCsat = document.querySelector('.formCsat')
+const formCsat = document.querySelector('.formCsat');
+
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', (e)=>{
+    e.preventDefault;
+})
 
 const teamName = document.querySelector('.teamName');
 const agentName = document.querySelector('.agentName');

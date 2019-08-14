@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Productivity</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,35 +12,35 @@
     <form id="form" >
  
         <div>
-        <label>Enter Team's name: </label>
+        <label>Team's name: </label>
         <input id="formTeamName" type='text'>
          
-        <label>Enter agent's name: </label>
+        <label>Agent's name: </label>
         <input id="formAgentName" type="text">
     </div>
          
          
         <label style="text-align: center;">Enter EPPH values: </label>
             <div style="display: flex; justify-content: center;"class="productivity-values">
-                <input style="width: 10%;" placeholder="Week 1" class="formEpph1" type="number">
-                <input style="width: 10%;" placeholder="Week 2" class="formEpph2" type="number">
-                <input style="width: 10%;" placeholder="Week 3" class="formEpph3" type="number">
+                <input style="width: 12%;" placeholder="Week 1" class="formEpph1" type="number">
+                <input style="width: 12%;" placeholder="Week 2" class="formEpph2" type="number">
+                <input style="width: 12%;" placeholder="Week 3" class="formEpph3" type="number">
             </div>
          
         <label style="text-align: center;">Enter QC values: </label>
             <div style="display: flex; justify-content: center;"class="productivity-values">
-                <input placeholder="Week 1" style="width: 10%;" class='formQc1' type="number">
-                <input placeholder="Week 2" style="width: 10%;" class='formQc2' type="number">
-                <input placeholder="Week 3" style="width: 10%;" class='formQc3' type="number">
+                <input placeholder="Week 1" style="width: 12%;" class='formQc1' type="number">
+                <input placeholder="Week 2" style="width: 12%;" class='formQc2' type="number">
+                <input placeholder="Week 3" style="width: 12%;" class='formQc3' type="number">
             </div>
          
         <label style="text-align: center;">Enter CSAT value: </label>
         <div style="display: flex; justify-content: center;" class="productivity-values" >
-            <input style="width: 10%;" class="formCsat" type="number">
+            <input style="width: 12%;" class="formCsat" type="number">
          
         </div>
         <div class="button-wrapper">
-         <button class="reset">Reset</button>
+        <!--  <button class="reset">Reset</button> -->
         </div>
         </form>
 
@@ -79,7 +79,7 @@
             </div>
 
         </div>
-
+        <button class ="reset" onClick="window.location.reload();" class="reset">Reset</button>
         <script src="app.js"></script>
 </body>
 </html>
