@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" >
+ 
+        <div>
+        <label>Enter Team's name: </label>
+        <input id="formTeamName" type='text'>
+         
+        <label>Enter agent's name: </label>
+        <input id="formAgentName" type="text">
+    </div>
+         
+         
+        <label style="text-align: center;">Enter EPPH values: </label>
+            <div style="display: flex; justify-content: center;"class="productivity-values">
+                <input style="width: 10%;" placeholder="Week 1" class="formEpph1" type="number">
+                <input style="width: 10%;" placeholder="Week 2" class="formEpph2" type="number">
+                <input style="width: 10%;" placeholder="Week 3" class="formEpph3" type="number">
+            </div>
+         
+        <label style="text-align: center;">Enter QC values: </label>
+            <div style="display: flex; justify-content: center;"class="productivity-values">
+                <input placeholder="Week 1" style="width: 10%;" class='formQc1' type="number">
+                <input placeholder="Week 2" style="width: 10%;" class='formQc2' type="number">
+                <input placeholder="Week 3" style="width: 10%;" class='formQc3' type="number">
+            </div>
+         
+        <label style="text-align: center;">Enter CSAT value: </label>
+        <div style="display: flex; justify-content: center;" class="productivity-values" >
+            <input style="width: 10%;" class="formCsat" type="number">
+         
+        </div>
+        <div class="button-wrapper">
+         <button class="reset">Reset</button>
+        </div>
+        </form>
+
+        <div class="wrapper">
+            <h1>Weekly update</h1>
+            <h2 class='teamName'></h2>
+            <h3 class='agentName'></h3>
+
+            <div class="scores">
+
+                <p class="weeks">Last 3 weeks</p>
+                <div class="productivity-wrapper">
+                    <div class="epph-wrapper">
+                        <p class="week epph">EPPH</p>
+                        <p class="week">Week 1:  <span class='epph1'></span></p>
+                        <p class="week">Week 2:  <span class='epph2'></span></p>
+                        <p class="week">Week 3:  <span class='epph3'></span></p>   
+                    </div>
+
+                    <div class="qc-wrapper">
+                            <p class="week qc">QC</p>
+                            <p class="week">Week 1: <span class="qc1"></span> %</p>
+                            <p class="week">Week 2: <span class="qc2"></span> %</p>
+                            <p class="week">Week 3: <span class="qc3"></span> %</p>   
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="csat-wrapper">
+            <p>CSAT: <span class="csat"></span></p>
+            </div>
+            <div class="logo">
+                <img src="img/epicgames.png" alt="">
+                <img src="img/5caLogo.png" alt="">
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+</body>
+</html>
