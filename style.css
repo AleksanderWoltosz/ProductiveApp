@@ -28,6 +28,7 @@ h2{
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 1px;
+    /* border-bottom: 1px solid #12263a; */
 }
 h3{
     font-size: 22px;
@@ -72,7 +73,7 @@ button:hover{
 .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     border: 1px solid #CAE5FF;
@@ -83,7 +84,7 @@ button:hover{
     margin-bottom: 5%;
 }
 
-.qc, .epph{
+ .epph{
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -98,7 +99,7 @@ button:hover{
     /* justify-content: space-between; */
 }
 
-.epph-wrapper, .qc-wrapper{
+.epph-wrapper{
     font-size: 17px;
     font-weight: 300;
     display: flex;
@@ -113,10 +114,10 @@ button:hover{
 }
 
 p.weeks{
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .week{
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .week span{
@@ -124,18 +125,21 @@ p.weeks{
     /* color: #12263a; */
 }
 
-.csat-wrapper{
+.csat-wrapper, .qc-wrapper{
+    /* display: flex; */
     font-size: 17px;
     border: 1px solid #059BFF;
     border-radius: 1px;
-    padding: 8px 15px;
+    padding: 10px 22px;
+    /* margin: 10px 22px; */
     color: rgb(222, 231, 238);
     background-color: #059BFF;
+    /* width: 40%; */
 }
-.csat-wrapper p{
+.csat-wrapper p, .qc-wrapper p{
     font-weight: 300;
 }
-.csat{
+.csat, qc1{
     font-weight: 700;
 }
 .logo{
